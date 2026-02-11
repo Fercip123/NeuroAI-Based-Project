@@ -15,7 +15,6 @@ class EEGEmotionDecoder:
         self.df['label_encoded'] = self.le.fit_transform(self.df['label'])
     
     def plot_brainwaves(self):
-        """Menampilkan potongan sinyal FFT untuk tiap emosi"""
         plt.figure(figsize=(12, 6))
         for emotion in self.le.classes_:
             # search for the first row matching the emotion
@@ -53,4 +52,5 @@ if __name__ == "__main__":
     y_pred = model.predict(X_test)
     print(f"\nDecoding Accuracy: {accuracy_score(y_test, y_pred) * 100:.2f}%")
     print("\nClassification Report:")
+
     print(classification_report(y_test, y_pred, target_names=decoder.le.classes_))
