@@ -1,4 +1,4 @@
-# NeuroAI-Research-Lab 
+# NeuroAI-Based-Project
 
 This repository is dedicated to the exploration, experimentation, and research at the intersection of **Neuroscience** and **Artificial Intelligence** (NeuroAI). The primary focus of this lab is to decode neural signals (EEG/fMRI) into machine-understandable information.
 
